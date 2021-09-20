@@ -25,3 +25,23 @@ You can see the results of your tests online in the "Actions" tab of your reposi
 ## Assignment Submission
 
 When you finish the assignment each day, make a new pull request from your daily challenge branch to your master branch and submit the PR URL in Canvas. You can submit a link to a pull request even if the pull request is closed.
+
+
+
+Materials for Challenge 06:  
+
+Apped array: https://stackoverflow.com/questions/351409/how-to-append-something-to-an-array  
+  
+How can I add a key/value pair to a JavaScript object?  
+https://stackoverflow.com/questions/1168807/
+how-can-i-add-a-key-value-pair-to-a-javascript-object 
+   
+JavaScript String concat():
+https://www.w3schools.com/jsref/jsref_concat_string.asp  
+  
+Reversing a String using split():
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split  
+
+Array.prototype.reverse():  
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse  
+
