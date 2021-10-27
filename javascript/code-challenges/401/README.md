@@ -8,3 +8,4 @@
 [Challenge-04 - N/A](code-challenges/401/challenge-04)\
 [Challenge-05 - Singly-Linked-Lists](code-challenges/401/challenge-05)\
 [Challenge-06 - Linked-list-insertion](code-challenges/401/challenge-06)\
+[Challenge-07 - k-th value from the end of a linked list.](code-challenges/401/challenge-07)\
