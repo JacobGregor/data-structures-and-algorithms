@@ -4,23 +4,23 @@
 
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
-### BIG-O: Linear Complexity O(n)
+### BIG-O: Complexity O(1)
 
 ## API
 
 ## Features\
 
-Create a new class called pseudo queue.\
-Do not use an existing Queue.\
-Instead, this PseudoQueue class will implement our standard queue interface (the two methods listed below),\
-Internally, utilize 2 Stack instances to create and manage the queue\
-Methods:\
+Create a class called AnimalShelter which holds only dogs and cats.\
+The shelter operates using a first-in, first-out approach.\
+Implement the following methods:\
 enqueue\
-Arguments: value\
-Inserts value into the PseudoQueue, using a first-in, first-out approach.\
+Arguments: animal\
+animal can be either a dog or a cat object.\
 dequeue\
-Arguments: none\
-Extracts a value from the PseudoQueue, using a first-in, first-out approach.\
+Arguments: pref\
+pref can be either "dog" or "cat"\
+Return: either a dog or a cat, based on preference.\
+If pref is not "dog" or "cat" then return null.\
 
 ## Specifications
 
@@ -39,6 +39,10 @@ Challenge Type: New Implementation\
 
 ## Testing
 
-can successfuly enqueue.
-can successfully fail an enqueue
-can successfully dequeue
+can successfuly enqueue cat.\
+can successfuly enqueue dog.\
+successfully fail to enque due to no input.\
+successfully dequeue a dog.\
+successfully dequeue a cat.\
+fail dequeue because no pref was given.\
+fail to dequeue, no animals in the shelter.\
