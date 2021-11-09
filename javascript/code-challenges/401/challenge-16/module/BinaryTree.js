@@ -1,42 +1,34 @@
 "use strict";
 
-const Node = require("./node");
-
 class BinaryTree {
   constructor() {
     this.root = null;
-    this.treeValues = [];
-  }
-  preOrder(current) {
-    this.treeValues.push(current.value);
-    if (current.left) {
-      this.preOrder(current.left);
-    }
-    if (current.right) {
-      this.preOrder(current.right);
-    }
-    return this.treeValues;
-  }
-  inOrder(current) {
-    if (current.left) {
-      this.inOrder(current.left);
-    }
-    this.treeValues.push(current.value);
-    if (current.right) {
-      this.inOrder(current.right);
-    }
-    return this.treeValues;
   }
 
-  postOrder(current) {
-    if (current.left) {
-      this.postOrder(current.left);
+  traverse(node) {
+    if (node === null) {
+      return 0.0000001;
     }
-    if (current.right) {
-      this.postOrder(current.right);
+    let root = node.value;
+    let leftRootValue = this.traverse(node.left);
+    let rightRootValue = this.traverse(node.right);
+
+    if (leftRootValue > root) {
+      root = leftRootValue;
     }
-    this.treeValues.push(current.value);
-    return this.treeValues;
+    if (rightRootValue > root) {
+      root = rightRootValue;
+    }
+    return root;
+  }
+
+  findMax() {
+    if (this.root === null) {
+      return `Root does not exist`;
+    } else {
+      let max = this.traverse(this.root);
+      return max;
+    }
   }
 } // closes BinaryTree Class
 
