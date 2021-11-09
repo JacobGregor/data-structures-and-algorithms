@@ -34,6 +34,10 @@ Branch Name: tree-max
 
 Challenge Type: Extending an Implementation
 
+## WHiteBoard
+
+![WHiteBoard](./images/whiteBoard.png)
+
 ## Testing
 
 Can successfully find the max value in a tree\
